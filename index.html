@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <!-- Import my styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Import font style -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
   </head>
   <body>
+    <!-- Container of the entire website -->
     <div class="container-fluid column" id="container">
+      <!-- Navbar with the title, the description of the site and the search bar -->
       <nav id="navbar" class="row gradient-white-bg half-height vcenter">
         <div id="logo-container" class="column col col-xs-12 col-sm-5 col-md-5 col-lg-5 vcenter small-padding-sides">
           <img src="assets/img/logo.svg" alt="">
@@ -22,9 +27,95 @@
           <input type="search" class="form-control" placeholder="Search">
         </div>
       </nav>
-      <header id="header-container" class="row double-height">
-        <div id="banner" class="column col col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+      <!-- The header of the page, with the main movie of the season -->
+      <header id="header-container" class="row double-height grey-text">
+        <div id="banner" class="column col col-xs-12 col-sm-12 col-md-12 col-lg-12 paddingless">
+          <div class="column col col-sm-6 col-md-6 col-lg-6 vcenter hcenter" id="icon">
+            <img src="assets/img/icono.jpg" alt="">
+          </div>
+          <div class="column col col-sm-6 col-md-6 col-lg-6" id="book-main-movie">
+            <!-- Row 1 -->
+            <div class="row small-height">
+              <div class="column col col-sm-12 col-md-12 col-lg-12 vcenter" id="title-movie">
+                <h2 class="upper">Big Hero 6</h2>
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row small-height">
+              <div class="column col col-sm-12 col-md-12 col-lg-12 paddingless">
+                <div class="column col col-sm-5 col-md-5 col-lg-5">
+                  <div class="row fourth-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12">
+                      <p id="restriction"><a href="#">All Ages</a></p>
+                    </div>
+                  </div>
+                  <div class="row fourth-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12">
+                      <p>Ratting</p>
+                    </div>
+                  </div>
+                  <div class="row fourth-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12">
+                      <p>Genre</p>
+                    </div>
+                  </div>
+                  <div class="row fourth-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12">
+                      <p>Release</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column col col-sm-7 col-md-7 col-lg-7 white-text">
+                  <div class="row fourth-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12 paddingless">
+                      <p>Don Hall, Chris Willams</p>
+                    </div>
+                  </div>
+                  <div class="row fourth-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12 paddingless">
+                      <p>: 8.5/10</p>
+                    </div>
+                  </div>
+                  <div class="row fourth-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12 paddingless">
+                      <p>: Animation, Action, Comedy</p>
+                    </div>
+                  </div>
+                  <div class="row fourth-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12 paddingless">
+                      <p>: 7 November 2014</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row small-height">
+              <div class="column col col-sm-12 col-md-12 col-lg-12" id="synopsis">
+                <p>The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.</p>
+              </div>
+            </div>
+            <!-- Row 4 -->
+            <div class="row small-height">
+              <div class="column col col-sm-12 col-md-12 col-lg-12 paddingless">
+                <div class="column col col-sm-6 col-md-6 col-lg-6">
+                  <div class="row half-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12 vcenter">
+                      <button class="btn btn-big upper mustard-bg white-text"><span class="icon-youtube-play"></span>Watch Trailer</button>
+                    </div>
+                  </div>
+                  <div class="row half-height-percentage">
+                    <div class="column col col-sm-12 col-md-12 col-lg-12 vcenter">
+                      <button class="btn btn-big upper soft-brown-bg white-text"><span class="icon-ticket"></span>Book Ticket</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
+      <!-- Showcase of popular movies -->
       <section id="movies-showcase" class="row mustard-bg basis-height">
         <div class="column col col-xs-12 col-sm-2 col-md-2 col-lg-2 hcenter padding-top-bottom">
           <img src="assets/img/lego.jpg" alt="">
@@ -45,15 +136,17 @@
           <img src="assets/img/big-hero-6.jpg" alt="">
         </div>
       </section>
+      <!-- Container with some trailer -->
       <section id="trailer-container" class="row basis-height">
         <iframe src="https://www.youtube.com/embed/zSWdZVtXT7E" frameborder="0" allowfullscreen id="trailer"></iframe>
       </section>
+      <!-- This is the section where people can buy tickets, read news and search for other movies -->
       <section id="buy-tickets" class="row triple-height white-bg">
-        <div class="half-height-percentage">
+        <div class="row half-height-percentage marginless">
           <div class="column col col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
           <div class="column col col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
         </div>
-        <div class="half-height-percentage" id="movies-showcase-2">
+        <div class="row half-height-percentage marginless" id="movies-showcase-2">
           <div class="column col col-xs-12 col-sm-3 col-md-3 col-lg-3 hcenter">
             <img src="assets/img/big-hero-6.jpg" alt="">
           </div>
@@ -63,11 +156,12 @@
           <div class="column col col-xs-12 col-sm-3 col-md-3 col-lg-3 hcenter">
             <img src="assets/img/trascendence.jpg" alt="">
           </div>
-          <div class="column col col-xs-12 col-sm-3 col-md-3 col-lg-3 hcenter">
+          <div class="column col col-sm-3 col-md-3 col-lg-3 hcenter">
             <img src="assets/img/pi.jpg" alt="">
           </div>
         </div>
       </section>
+      <!-- Footer. Self explanatory -->
       <footer id="footer" class="row basis-height soft-grey-bg"></footer>
     </div>
     <script src="assets/js/jquery-3.2.1.js"></script>

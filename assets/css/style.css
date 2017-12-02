@@ -1,3 +1,13 @@
+/* Choosing the font */
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+button span {
+  margin-right: 5px;
+}
+
 /* Colors I'll be using */
 
 .gradient-white-bg {
@@ -8,8 +18,16 @@
   background-color: white;
 }
 
+.white-text {
+  color: white;
+}
+
 .mustard-bg {
   background-color: #DFB636;
+}
+
+.soft-brown-bg {
+  background-color: #BB7B29;
 }
 
 .soft-grey-bg {
@@ -17,7 +35,7 @@
 }
 
 .grey-text {
-  color: #CECECE;
+  color: #D3D3D3;
 }
 
 /* The sizes of my website */
@@ -46,6 +64,15 @@
   height: 50%;
 }
 
+.fourth-height-percentage {
+  height: 25%;
+}
+
+/* Double-Height divided by six 30/4 = 7.5 */
+.small-height {
+  height: 7.5em;
+}
+
 .small-padding-sides {
   padding-left: 1em;
   padding-right: 1em;
@@ -54,6 +81,16 @@
 .padding-top-bottom {
   padding-bottom: 0.5em;
   padding-top: 0.5em;
+}
+
+.row .paddingless {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row.marginless {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* This classes will allow me to center divs vertically and 
@@ -86,9 +123,12 @@ horizontally */
   height: 100%;
 }
 
-/* I don't want margins or padding on my container, so I'll delete them */
-
-
+.btn-big {
+  width: 100%;
+  font-size: 1.2em;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
 
 /* Changing some styles of specific containers */
 
@@ -116,6 +156,18 @@ horizontally */
   background-repeat: no-repeat;
 }
 
+#banner h2 {
+  font-size: 2.5em;
+  font-weight: 800;
+  padding-bottom: 0.5em;
+  padding-right: 40%;
+  border-bottom: 2px solid #D3D3D3;
+}
+
+#banner p {
+  font-size: 1.1em;
+}
+
 #movies-showcase img {
   height: 100%;
 }
@@ -129,17 +181,34 @@ horizontally */
   height: 100%;
 }
 
+#icon img {
+  width: 10%;
+}
+
+#restriction a {
+  text-decoration: none;
+  color: #3BCF68;
+  border: 1px solid #3BCF68;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#synopsis {
+  padding: 1em;
+  padding-right: 20%;
+}
 
 /* Changing some styles according to the screen size */
 
-@media (min-width: 1100px) {
+@media (max-width: 1040px) {
 
   #logo-container img {
     width: 80%;
   }
+
 }
 
-@media (max-width: 860px) and (min-width: 470px) {
+@media (max-width: 900px) and (min-width: 470px) {
   
   #logo-container {
     width: 50%;
@@ -153,12 +222,20 @@ horizontally */
     display: none;
   }
 
-  #banner {
-    background-size: cover;
+  #header-container {
+    display: none;
   }
 
   #movies-showcase {
-    height: auto;
+    display: none;
+  }
+
+  #movies-showcase-2 {
+    display: none;
+  }
+
+  #buy-tickets .column {
+    width: 100%;
   }
 
 }
@@ -166,6 +243,10 @@ horizontally */
 @media (max-width: 470px) {
 
   #search-container {
+    display: none;
+  }
+
+  #header-container {
     display: none;
   }
 
@@ -179,6 +260,14 @@ horizontally */
 
   #movies-showcase {
     height: auto;
+  }
+
+  #movies-showcase-2 {
+    display: none;
+  }
+
+  #buy-tickets .column {
+    width: 100%;
   }
 
 }
