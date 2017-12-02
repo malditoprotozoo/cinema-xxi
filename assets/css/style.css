@@ -1,0 +1,262 @@
+/* Colors I'll be using */
+
+.gradient-white-bg {
+  background: linear-gradient(to right,white,#F5F5F5);
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.mustard-bg {
+  background-color: #DFB636;
+}
+
+.soft-grey-bg {
+  background-color: #F3F3F3;
+}
+
+.grey-text {
+  color: #CECECE;
+}
+
+/* The sizes of my website */
+
+.basis-height {
+  height: 15em;
+}
+
+.double-height {
+  height: 30em;
+}
+
+.triple-height {
+  height: 45em;
+}
+
+.cuadruple-height {
+  height: 60em;
+}
+
+.half-height {
+  height: 7.5em;
+}
+
+.half-height-percentage {
+  height: 50%;
+}
+
+.small-padding-sides {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.padding-top-bottom {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+/* This classes will allow me to center divs vertically and 
+horizontally */
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+/* Classes that'll ransform text */
+
+.upper {
+  text-transform: uppercase;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+/* Temporal class to see the columns */
+
+.column {
+  border: 1px solid black;
+  height: 100%;
+}
+
+/* I don't want margins or padding on my container, so I'll delete them */
+
+
+
+/* Changing some styles of specific containers */
+
+#description {
+  font-size: 0.8em;
+}
+
+#search-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#search-container input {
+  width: 50%;
+}
+
+#logo-container img {
+  width: 100%;
+}
+
+#banner {
+  background: url(../img/banner.jpg) #383838;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+#movies-showcase img {
+  height: 100%;
+}
+
+#trailer {
+  width: 100%;
+  height: 100%;
+}
+
+#movies-showcase-2 img {
+  height: 100%;
+}
+
+
+/* Changing some styles according to the screen size */
+
+@media (min-width: 1100px) {
+
+  #logo-container img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 860px) and (min-width: 470px) {
+  
+  #logo-container {
+    width: 50%;
+  }
+
+  #description-container {
+    width: 50%;
+  }
+
+  #search-container {
+    display: none;
+  }
+
+  #banner {
+    background-size: cover;
+  }
+
+  #movies-showcase {
+    height: auto;
+  }
+
+}
+
+@media (max-width: 470px) {
+
+  #search-container {
+    display: none;
+  }
+
+  #description-container {
+    display: none;
+  }
+
+  #banner {
+    background-size: cover;
+  }
+
+  #movies-showcase {
+    height: auto;
+  }
+
+}
+
+
+
+/* h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up)
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up)
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up)
+@media (min-width: @screen-lg-min) { ... }
+
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+
+.padding-sides {
+  padding-left: 3em!important;
+  padding-right: 3em!important;
+}
+
+.padding-top-bottom {
+  padding-bottom: 1.5em!important;
+  padding-top: 1.5em!important;
+}
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+#description {
+  position: absolute;
+  top: 3em;
+  font-size: 0.8em;
+  margin-left: 2em;
+  color: #CECECE;
+}
+
+#banner {
+  background: url(../img/banner.jpg) #383838;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+#trailer {
+  width: 100%;
+  height: inherit;
+}
+
+#movies-showcase img {
+  height: 14em;
+  margin-right: 1em;
+}
+ */
